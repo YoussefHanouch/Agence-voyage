@@ -1,0 +1,149 @@
+
+
+section .signins
+{
+  position: absolute;
+  width: 400px;
+  background: #222;  
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(0,0,0,9);
+ 
+}
+section .signins .content 
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+section .signins .content h2 
+{
+  font-size: 2em;
+  color: #F2D129;
+  text-transform: uppercase;
+}
+section .signins .content .form 
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+section .signins .content .form .inputBoxx
+{
+  margin-left: -30%;
+  position: relative;
+  width: 160%;
+}
+section .signins .content .form .inputBoxx input 
+{
+  position: relative;
+  width: 100%;
+  background: #333;
+  border: none;
+  outline: none;
+  padding: 25px 10px 7.5px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1em;
+}
+section .signins .content .form .inputBoxx i 
+{
+  position: absolute;
+  left: 0;
+  padding: 15px 10px;
+  font-style: normal;
+  color: #aaa;
+  transition: 0.5s;
+  pointer-events: none;
+}
+.signins .content .form .inputBoxx input:focus ~ i,
+.signins .content .form .inputBoxx input:valid ~ i
+{
+  transform: translateY(-7.5px);
+  font-size: 0.8em;
+  color: #0c0c0c;
+}
+.signins .content .form .links 
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.signins .content .form .links a 
+{
+  color: #fff;
+  text-decoration: none;
+}
+.signins .content .form .links a:nth-child(2)
+{
+  color: #F2D129;
+  font-weight: 600;
+}
+.signins .content .form .inputBoxx input[type="submit"]
+{
+  padding: 10px;
+  background: #F2D129;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.35em;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+input[type="submit"]:active
+{
+  opacity: 0.6;
+}
+@media (max-width: 900px)
+{
+  section .signins{
+    margin-top: 90px;
+  }
+  section span 
+  {
+    width: calc(10vw - 2px);
+    height: calc(10vw - 2px);
+  }
+}
+@media (max-width: 600px)
+{
+  section .signins{
+    margin-top: 90px;
+  }
+  section span 
+  {
+    width: calc(20vw - 2px);
+    height: calc(20vw - 2px);
+  }
+}
+/* Téléphones */
+@media only screen and (max-width: 767px) {
+  section .signins{
+    margin-top: 90px;
+  }
+}
+
+/* Tablettes */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  section .signins{
+    margin-top: 90px;
+    width: 600px;
+
+  }
+
+}
+/* Ordinateurs */
+@media only screen and (min-width: 1024px) {
+  section .signins{
+    margin-top: 90px;
+  }}

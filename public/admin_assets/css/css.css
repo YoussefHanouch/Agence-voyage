@@ -1,0 +1,9 @@
+.lg{
+    width: 60px;
+    height: 60px;
+    transform: rotate(15deg);
+    mix-blend-mode: darken;
+}
+.bc{
+    background: #62A1D9;
+}
